@@ -1,5 +1,5 @@
 
 {
-    "mongodbURI": "mongodb+srv://skamino:<password>@comp229-a2.pqjcv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "mongodbURI": "mongodb+srv://skamino:#AsusWhite123@comp229-a2.pqjcv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     "secretOrKey": "secret"
 }
