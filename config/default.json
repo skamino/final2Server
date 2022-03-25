@@ -1,5 +1,5 @@
 
 {
-    "mongodbURI": "//localhost:27017/Final",
+    "mongodbURI": "mongodb+srv://skamino:<password>@comp229-a2.pqjcv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     "secretOrKey": "secret"
 }
