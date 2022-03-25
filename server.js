@@ -24,7 +24,7 @@ app.use(express.json());
 //const db = config.get("mongoURI");
 // Connect to MongoDB
 mongoose
-  .connect("mongodb://localhost:27017/FinalProject", {
+  .connect("mongodb+srv://skamino:#AsusWhite123@comp229-a2.pqjcv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
