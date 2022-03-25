@@ -1,0 +1,5 @@
+
+{
+    "mongodbURI": "//localhost:27017/Final",
+    "secretOrKey": "secret"
+}
