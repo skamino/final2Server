@@ -31,9 +31,24 @@ mongoose
   .then(() => console.log("MongoDB successfully connected"))
   .catch((err) => console.log(err));
 // Passport middleware
+
+const corsOptions = {
+  origin: '*',
+  credentials: true
+}
+
 app.use(passport.initialize());
 
-app.use(cors());
+app.use(cors(corsOptions));
+app.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
+  if (req.method === 'OPTIONS') {
+    res.sendStatus(200);
+  } else {
+    next();
+  }
+})
 
 // Passport config
 require("./config/passport")(passport);
